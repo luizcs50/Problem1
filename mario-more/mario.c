@@ -37,13 +37,3 @@ int main(void)
         }
         printf("\n");
     }
-
-
-
-    /*for (int i = 0; i < height; i++) {
-        for (int j = 0; j <= i; j ++) {
-            printf("#");
-        }
-        printf("\n");
-    }*/
-}
