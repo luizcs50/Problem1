@@ -17,7 +17,7 @@ int main(void)
 
     bool checkResult = checksum(creditNumber, length);
 
-    if (checkResult ==  0)
+    if (checkResult ==  false)
     {
         printf("INVALID\n");
         exit(1);
@@ -56,8 +56,7 @@ bool checksum(long creditNumber, int length)
             checksum += splitNum;
         }else
         {
-            checksum += splitNum / 10;
-            checksum += splitNum % 10;
+            checksum += splitNum / 10 + splitNum % 10;
         }
 
     }
